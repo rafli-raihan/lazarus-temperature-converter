@@ -1,0 +1,117 @@
+object Form1: TForm1
+  Left = 372
+  Height = 246
+  Top = 172
+  Width = 346
+  Caption = 'Slebew Converter'
+  ClientHeight = 246
+  ClientWidth = 346
+  OnCreate = FormCreate
+  LCLVersion = '2.2.2.0'
+  object GroupBox1: TGroupBox
+    Left = 16
+    Height = 80
+    Top = 16
+    Width = 313
+    Caption = 'Suhu Asal'
+    ClientHeight = 60
+    ClientWidth = 311
+    Font.Height = -16
+    Font.Name = 'Comfortaa'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 8
+      Height = 23
+      Top = 16
+      Width = 40
+      Caption = 'Suhu'
+      Font.Height = -16
+      Font.Name = 'Manrope'
+      ParentColor = False
+      ParentFont = False
+    end
+    object edtSuhuAsal: TEdit
+      Left = 64
+      Height = 40
+      Top = 8
+      Width = 80
+      Font.Height = -16
+      Font.Name = 'Manrope'
+      ParentFont = False
+      TabOrder = 0
+    end
+    object cbSuhuAsal: TComboBox
+      Left = 152
+      Height = 38
+      Top = 8
+      Width = 144
+      Font.Height = -15
+      Font.Name = 'Manrope'
+      ItemHeight = 0
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 16
+    Height = 81
+    Top = 104
+    Width = 312
+    Caption = 'Hasil Konversi'
+    ClientHeight = 61
+    ClientWidth = 310
+    Font.Height = -16
+    Font.Name = 'Comfortaa'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    object Label2: TLabel
+      Left = 8
+      Height = 23
+      Top = 16
+      Width = 40
+      Caption = 'Suhu'
+      Font.Height = -16
+      Font.Name = 'Manrope'
+      ParentColor = False
+      ParentFont = False
+    end
+    object cbSuhuHasil: TComboBox
+      Left = 152
+      Height = 38
+      Top = 8
+      Width = 144
+      Font.Height = -15
+      Font.Name = 'Manrope'
+      ItemHeight = 0
+      ParentFont = False
+      TabOrder = 0
+    end
+    object HasilSuhu: TLabel
+      Left = 72
+      Height = 23
+      Top = 16
+      Width = 36
+      Alignment = taCenter
+      Caption = '            '
+      Font.Height = -16
+      Font.Name = 'Manrope'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object BtnKonversi: TButton
+    Left = 16
+    Height = 32
+    Top = 200
+    Width = 312
+    Caption = 'Konversi'
+    Font.Height = -15
+    Font.Name = 'Manrope'
+    OnClick = BtnKonversiClick
+    ParentFont = False
+    TabOrder = 2
+  end
+end
